@@ -1,6 +1,9 @@
 package com.example.inf0420260602;
 
 import android.os.Bundle;
+import android.widget.Adapter;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,7 +11,14 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+
+
 public class MainActivity extends AppCompatActivity {
+
+    //ListView lista = findViewById(R.id.lista);
+    //Object[] items = {};
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+
+            //rrayAdapter adapter = new ArrayAdapter(this, R.layout.activity_main, );
+
+
             return insets;
         });
     }
