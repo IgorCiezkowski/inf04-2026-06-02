@@ -19,7 +19,8 @@
     <ListView
         android:id="@+id/lista"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp"
+        android:layout_weight="1">
         <!--<LinearLayout
             android:id="@+id/layout"
             android:layout_width="wrap_content"
@@ -31,41 +32,47 @@
                 />
         </LinearLayout>-->
     </ListView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dodanie notatki"
-        android:textSize="25sp"
-        android:textColor="#0000CD"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tytuł notatki"
-        android:labelFor="@+id/tytul"/>
-
-    <EditText
-        android:id="@+id/tytul"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Treść notatki"
-        android:labelFor="@+id/tresc"/>
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dodanie notatki"
+            android:textSize="25sp"
+            android:textColor="#0000CD"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tytuł notatki"
+            android:labelFor="@+id/tytul"/>
 
-    <EditText
-        android:id="@+id/tresc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DODAJ"
-        android:background="#0000CD"
-        />
+        <EditText
+            android:id="@+id/tytul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Treść notatki"
+            android:labelFor="@+id/tresc"/>
+
+        <EditText
+            android:id="@+id/tresc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"/>
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DODAJ"
+            android:background="#0000CD"/>
+    </LinearLayout>
 </LinearLayout>
